@@ -26,7 +26,7 @@ def is_420(number : int) -> bool:
 
 # Given an integer as an argument it returns True if the number is correct
 # or False if the number is incorrect. 
-def is_6516(number : int) -> bool:
+def is_6515(number : int) -> bool:
     guess = str(number)
     result = hashlib.md5(guess.encode())
 
