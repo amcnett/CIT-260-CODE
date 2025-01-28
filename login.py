@@ -31,6 +31,10 @@ def get_login_name(first, last, idnumber):
 # have at least one uppercase letter, one lowercase
 # letter, and one digit.
 
+# In-class
+# We'll extend this to require a special character as well.
+# The characters must be one of the following: !@#$%^&*
+
 def valid_password(password):
     # Set the Boolean variables to false.
     correct_length = False
