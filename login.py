@@ -16,6 +16,7 @@ def get_login_name(first, last, idnumber):
     # Get the last three characters of the student ID.
     # If the ID number is less than 3 characters, the
     # slice will return the entire ID number.
+    # REMINDER: invalid indexes do NOT thrown an exception
     set3 = idnumber[-3 :]
 
     # Put the sets of characters together.
