@@ -2,6 +2,7 @@
 # last name, and ID number as arguments. It returns
 # a system login name.
 
+
 def get_login_name(first, last, idnumber):
     # Get the first three letters of the first name.
     # If the name is less than 3 characters, the
@@ -42,6 +43,7 @@ def valid_password(password):
     has_uppercase = False
     has_lowercase = False
     has_digit = False
+    has_special = False
 
     # Begin the validation. Start by testing the
     # password's length.
@@ -58,15 +60,19 @@ def valid_password(password):
                 has_lowercase = True
             if ch.isdigit():
                 has_digit = True
+            if ch in "!@#$%^&*":
+                has_special = True
 
     # Determine whether all of the requirements
     # are met. If they are, set is_valid to true.
     # Otherwise, set is_valid to false.
-    if correct_length and has_uppercase and \
-        has_lowercase and has_digit:
+    if correct_length and has_uppercase and has_lowercase and has_digit and has_special:
         is_valid = True
     else:
         is_valid = False
 
     # Return the is_valid variable.
     return is_valid
+
+print(get_login_name("B", "Smith", "1234567890"))
+print(valid_password("a12Bwern"))
