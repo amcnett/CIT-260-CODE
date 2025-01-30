@@ -1,7 +1,3 @@
-import testg
-
-test.test()
-
 # numeric_str = "½" 
 # print(numeric_str.isnumeric())  
 
