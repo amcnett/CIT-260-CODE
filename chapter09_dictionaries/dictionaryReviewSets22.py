@@ -25,7 +25,7 @@ print(states)
 # Remove a state
 states.pop("zz", None)
 states.pop("zz", None)
-states.pop("zz", None)
+states.pop("zz", None) 
 # Iterate through the dictionary printing keys and values
 for key,value in states.items():
     print(f"The capitol of {key} is {value}")
@@ -62,3 +62,17 @@ print(movie_me | movie_you)
 
 # List movies that we both like​
 print(movie_me  & movie_you)
+
+#Find movies that only i like​
+print(movie_me - movie_you)
+print(movie_me.difference(movie_you))
+
+#Find movies that only your neighbor likes
+print(movie_you - movie_me)
+
+movie_me.add("Aliens")
+
+movie_me.remove("Aliens")
+
+for amovie in movie_me:
+    print(amovie)
