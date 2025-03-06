@@ -31,7 +31,6 @@ class BankAccount:
         return self.__balance
 
 def main():
-  anAccount = BankAccount()
   anAccount = BankAccount(100)
 
 if __name__=="__main__":
